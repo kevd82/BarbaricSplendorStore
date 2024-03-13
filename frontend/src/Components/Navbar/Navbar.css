@@ -5,6 +5,7 @@
     box-shadow: 0px 1px 3px -2px black;
     background-image: url("../Assets/Faeded.jpg"); 
     background-size: cover; 
+    border-bottom: 3px solid Black;
 }
 
 .nav-menu{
@@ -23,14 +24,6 @@
     justify-content: center;
     gap: 5px;
     cursor: pointer;
-}
-
-.nav-menu hr {
-    border: none;
-    width: 75%;
-    height: 3px;
-    border-radius: 10px;
-    background: #ff4141;
 }
 
 .nav-login-cart {
