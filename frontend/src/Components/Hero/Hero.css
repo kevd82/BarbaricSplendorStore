@@ -1,0 +1,31 @@
+.hero {
+    height: 100vh;
+    display: block;
+    padding: 15px 0px 0px 0px;
+    margin: auto;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 650;
+}
+
+.hero-image {
+    justify-content: center;
+    align-items: center;
+    margin: -20px 0px 0px 70px;
+}
+
+.hero-text2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 650;
+    text-decoration: underline;
+    margin: 20px 0px -22px 0px;
+}
