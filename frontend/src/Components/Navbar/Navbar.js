@@ -1,14 +1,31 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import "./Navbar.css";
 import {Link} from "react-router-dom";
 import logo from "../Assets/logo.png";
 import nav_image from "../Assets/nav_image.png";
+import nav_image2 from "../Assets/nav_image2.png";
+import nav_image3 from "../Assets/nav_image3.png";
+import nav_image4 from "../Assets/nav_image4.png";
+import nav_image5 from "../Assets/nav_image5.png";
 import cart_icon from "../Assets/cart_icon.png";
+
 
 
 const Navbar = () => {
 
   const [menu, setMenu] = useState("");
+
+  const [randomImage, setRandomImage] = useState("");
+  
+  useEffect(()=>{
+    const images= [nav_image, nav_image2, nav_image3, nav_image4, nav_image5];
+
+    const randomImageIndex =
+      Math.floor(Math.random()*images.length);
+    setRandomImage(images[randomImageIndex]);
+    }, [])
+  
+
   return (
     <div className="navbar">
       <div className="nav-logo">
@@ -26,7 +43,7 @@ const Navbar = () => {
         <div className="nav-cart-count">0</div>
       </div>
       <div className="nav-image">
-        <img src={nav_image} alt="" />
+        <img src={randomImage} alt="" />
       </div> 
     </div>
   )

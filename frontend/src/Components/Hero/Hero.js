@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import "./Hero.css";
 import hero_image from "../Assets/hero_image.png";
 
