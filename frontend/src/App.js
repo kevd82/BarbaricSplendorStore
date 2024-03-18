@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css';
 import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from "./Pages/Home";
 import Miniatures from "./Pages/Miniatures";
@@ -24,7 +25,7 @@ function App() {
         <Route path="/loginreg" element={<LoginReg/>}/>
         <Route path="/product/:id" element={<Product/>}/>
       </Routes>
-      
+      <Footer/>
       </BrowserRouter>
       
     </div>

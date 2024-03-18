@@ -1,8 +1,8 @@
 import React from 'react'
 import "./Footer.css";
-import footer_logo from "../Assets/logo.png";
+import footer_logo from "../Assets/logo_footer.png";
 import instagram_icon from "../Assets/instagram_icon.png";
-import facebook_icon from "../Assets/facebook_icon.png";
+import facebook_icon from "../Assets/facebook_icon.png"; 
 
 const Footer = () => {
     return (
@@ -15,15 +15,13 @@ const Footer = () => {
                 <li>Contact</li>
             </ul>
             <div className="footer-social-icons">
-                <div className="footer-icons-container">
+                
                     <img src={instagram_icon} alt=""/>
-                </div>
-                <div className="footer-icons-container">
                     <img src={facebook_icon} alt=""/>
-                </div>
+                <div/>
                 <div className="footer-copyright">
-                    <hr/>
                     <p>Copyright @ 2024 - All Rights Reserved.</p>
+                    <p>Logo by Gilead. <br/>Clipart by Gilead and MrZarono.</p>
                 </div>
             </div>
         </div>
