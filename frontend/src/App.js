@@ -4,9 +4,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from "./Pages/Home";
-import Miniatures from "./Pages/Miniatures";
-import SceneryTerrain from "./Pages/SceneryTerrain";
-import Books from "./Pages/Books";
+import ShopCategory from "./Pages/ShopCategory"
 import Cart from "./Pages/Cart";
 import LoginReg from "./Pages/LoginReg";
 import Product from "./Pages/Product";
@@ -18,12 +16,14 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/miniatures" element={<Miniatures/>}/>
-        <Route path="/sceneryterrain" element={<SceneryTerrain/>}/>
-        <Route path="/books" element={<Books/>}/>
+        <Route path="/miniatures" element={<ShopCategory category="miniatures"/>}/>
+        <Route path="/sceneryterrain" element={<ShopCategory category="scenery_terrain"/>}/>
+        <Route path="/books" element={<ShopCategory category="books"/>}/>
         <Route path="/cart" element={<Cart/>}/>
-        <Route path="/loginreg" element={<LoginReg/>}/>
-        <Route path="/product/:id" element={<Product/>}/>
+        <Route path="/login" element={<LoginReg/>}/>
+        <Route path="product" element={<Product/>}>
+          <Route path=":productId" element={<Product/>}/>
+        </Route>
       </Routes>
       <Footer/>
       </BrowserRouter>
