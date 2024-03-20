@@ -7,7 +7,8 @@
     justify-content: center;
     margin: auto;
     padding: 0px 140px;
-    margin-bottom: 150px;
+    padding-top: 50px;
+    margin-bottom: 100px;
     gap: 30px;
 }
 
@@ -15,7 +16,7 @@
     align-items: center;
     justify-content: center;
     color: #454545;
-    font-size: 55px;
+    font-size: 45px;
     font-weight: 600;
     padding-left: 80px;
     margin-bottom: -50px;
@@ -25,7 +26,7 @@
     align-items: center;
     justify-content: center;
     color: #454545;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     padding-left: 80px;
 }
