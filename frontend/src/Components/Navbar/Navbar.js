@@ -34,7 +34,7 @@ const Navbar = () => {
       <ul className="nav-menu">
         <li onClick={()=>{setMenu("home")}}><Link style={{color: "black", textDecoration: "none"}} to="/">Home</Link>{menu==="home"?<hr/>:<></>} </li>
         <li onClick={()=>{setMenu("miniatures")}}><Link style={{ color: "black", textDecoration: "none"}} to="/miniatures">Miniatures</Link>{menu==="miniatures"?<hr/>:<></>}</li>
-        <li onClick={()=>{setMenu("sceneryterrain")}}><Link style={{ color: "black",textDecoration: "none"}} to="/sceneryterrain">Scenery/Terrain</Link>{menu==="sceneryterrain"?<hr/>:<></>}</li>
+        <li onClick={()=>{setMenu("sceneryterrain")}}><Link style={{ color: "black", textDecoration: "none"}} to="/sceneryterrain">Scenery/Terrain</Link>{menu==="sceneryterrain"?<hr/>:<></>}</li>
         <li onClick={()=>{setMenu("books")}}><Link style={{ color: "black",textDecoration: "none"}} to="/books">Books</Link>{menu==="books"?<hr/>:<></>}</li>
       </ul>
       <div className="nav-login-cart">
