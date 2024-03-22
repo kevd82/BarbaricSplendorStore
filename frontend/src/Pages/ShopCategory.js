@@ -25,8 +25,10 @@ const ShopCategory = (props) => {
             else{
               return null;
             }
-          })
-        }
+          })}
+      </div>
+      <div className="shopcategory-loadmore">
+        Show More
       </div>
       </div>
 

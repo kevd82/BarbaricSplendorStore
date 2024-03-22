@@ -21,6 +21,7 @@
     gap: 50px;
     color: #252525;
     font-size: 20px;
+    font-weight: 500;
 }
 
 .footer-links li {
@@ -40,6 +41,7 @@
     width: 100%;
     color: #1a1a1a;
     font-size: 20px;
+    font-weight: 500;
 }
 
 
