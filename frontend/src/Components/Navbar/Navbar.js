@@ -36,6 +36,7 @@ const Navbar = () => {
         <li onClick={()=>{setMenu("miniatures")}}><Link style={{ color: "black", textDecoration: "none"}} to="/miniatures">Miniatures</Link>{menu==="miniatures"?<hr/>:<></>}</li>
         <li onClick={()=>{setMenu("sceneryterrain")}}><Link style={{ color: "black", textDecoration: "none"}} to="/sceneryterrain">Scenery/Terrain</Link>{menu==="sceneryterrain"?<hr/>:<></>}</li>
         <li onClick={()=>{setMenu("books")}}><Link style={{ color: "black",textDecoration: "none"}} to="/books">Books</Link>{menu==="books"?<hr/>:<></>}</li>
+        <li onClick={()=>{setMenu("about")}}><Link style={{color: "black", textDecoration: "none"}} to="/about">About Barbaric Splendor</Link>{menu==="about"?<hr/>:<></>} </li>
       </ul>
       <div className="nav-login-cart">
         <Link to="/loginreg"><button>Login</button></Link>

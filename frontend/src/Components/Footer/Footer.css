@@ -15,19 +15,6 @@
     gap: 20px;
 }
 
-.footer-links {
-    display: flex;
-    list-style: none;
-    gap: 50px;
-    color: #252525;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.footer-links li {
-    cursor: pointer;
-}
-
 .footer-social-icons {
     display: flex;
     gap: 20px;
