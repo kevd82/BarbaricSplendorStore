@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import './App.css';
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
@@ -26,7 +26,7 @@ function App() {
         <Route path="/books" element={<ShopCategory category="books"/>}/>
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/loginreg" element={<LoginReg/>}/>
-        <Route path="product" element={<Product/>}>
+        <Route path="/product" element={<Product/>}>
           <Route path=":productId" element={<Product/>}/>
         </Route>
       </Routes>

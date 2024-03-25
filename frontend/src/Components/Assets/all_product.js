@@ -28,12 +28,6 @@ import p27_img from "./product_27.png";
 import p28_img from "./product_28.png";
 import p29_img from "./product_29.png";
 import p30_img from "./product_30.png";
-import p31_img from "./product_31.png";
-import p32_img from "./product_32.png";
-import p33_img from "./product_33.png";
-import p34_img from "./product_34.png";
-import p35_img from "./product_35.png";
-import p36_img from "./product_36.png";
 
 let all_product = [
   {
@@ -246,48 +240,7 @@ let all_product = [
     image: p30_img,
     price: 85.0,
   },
-  {
-    id: 31,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "books",
-    image: p31_img,
-    price: 85.0,
-  },
-  {
-    id: 32,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "books",
-    image: p32_img,
-    price: 85.0,
-  },
-  {
-    id: 33,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "books",
-    image: p33_img,
-    price: 85.0,
-  },
-  {
-    id: 34,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "books",
-    image: p34_img,
-    price: 85.0,
-  },
-  {
-    id: 35,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "books",
-    image: p35_img,
-    price: 85.0,
-  },
-  {
-    id: 36,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "books",
-    image: p36_img,
-    price: 85.0,
-  },
+  
 ];
 
 export default all_product;
