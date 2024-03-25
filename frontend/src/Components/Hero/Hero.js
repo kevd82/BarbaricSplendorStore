@@ -8,10 +8,9 @@ const Hero = () => {
     <div className="hero">
         <div className="hero-text">
             <h1>Welcome to Barbaric Splendor!</h1>
-            <br/>
             </div>
           <div className="hero-text2">
-            <h2>Latest news</h2>
+            <h2>Placeholder text for About info descsribing barbaric splendor</h2>
           </div>
         <div className="hero-image">
             <img src={hero_image} alt=""/>

@@ -8,7 +8,7 @@ import ShopCategory from "./Pages/ShopCategory"
 import Cart from "./Pages/Cart";
 import LoginReg from "./Pages/LoginReg";
 import Product from "./Pages/Product";
-import About from "./Pages/About";
+import Contact from "./Pages/Contact";
 
 function App() {
 
@@ -20,7 +20,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
+        <Route path="/contact" element={<Contact/>}/>
         <Route path="/miniatures" element={<ShopCategory category="miniatures"/>}/>
         <Route path="/sceneryterrain" element={<ShopCategory category="sceneryterrain"/>}/>
         <Route path="/books" element={<ShopCategory category="books"/>}/>
