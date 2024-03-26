@@ -28,6 +28,12 @@ const DisplayProduct = (props) => {
           <img src={star_icon} alt=""/>
           <img src={star_dull_icon} alt=""/>
           <p>(122)</p>
+          <div className="displayproduct-right-price">
+            ${product.price}
+          </div>
+          <div className="displayproduct-right-description">
+            {product.description}
+          </div>
         </div>
       </div>
     </div>

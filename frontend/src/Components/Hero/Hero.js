@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Hero.css";
-import hero_image from "../Assets/hero_image.png";
+import News from "../News/News.js";
 
 
 const Hero = () => {
@@ -8,12 +8,10 @@ const Hero = () => {
     <div className="hero">
         <div className="hero-text">
             <h1>Welcome to Barbaric Splendor!</h1>
-            </div>
-          <div className="hero-text2">
-            <h2>Placeholder text for About info descsribing barbaric splendor</h2>
+            <h2>Miniatures and more for your barbarian/sword and sorcery gaming.</h2>
           </div>
-        <div className="hero-image">
-            <img src={hero_image} alt=""/>
+        <div className="hero-news">
+          <News/>
         </div>
     </div>
   )

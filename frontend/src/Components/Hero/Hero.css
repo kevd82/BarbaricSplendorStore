@@ -6,27 +6,18 @@
     width: 50%;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .hero-text {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     font-weight: 650;
-    font-size: 30px;
-    padding-left: 50px;
 }
 
-.hero-image {
+.hero-news {
     justify-content: center;
     align-items: center;
-    margin: -20px 0px 0px 70px;
 }
 
-.hero-text2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 650;
-    text-decoration: underline;
-}

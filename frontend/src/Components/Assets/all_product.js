@@ -43,6 +43,7 @@ let all_product = [
     category: "miniatures",
     image: p2_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 3,
