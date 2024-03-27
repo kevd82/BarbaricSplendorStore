@@ -36,6 +36,7 @@ let all_product = [
     category: "miniatures",
     image: p1_img,
     price: 50.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 2,
@@ -51,6 +52,7 @@ let all_product = [
     category: "miniatures",
     image: p3_img,
     price: 60.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 4,
@@ -58,6 +60,7 @@ let all_product = [
     category: "miniatures",
     image: p4_img,
     price: 100.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 5,
@@ -65,6 +68,7 @@ let all_product = [
     category: "miniatures",
     image: p5_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 6,
@@ -72,6 +76,7 @@ let all_product = [
     category: "miniatures",
     image: p6_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 7,
@@ -79,6 +84,7 @@ let all_product = [
     category: "miniatures",
     image: p7_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 8,
@@ -86,6 +92,7 @@ let all_product = [
     category: "miniatures",
     image: p8_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 9,
@@ -93,6 +100,7 @@ let all_product = [
     category: "miniatures",
     image: p9_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 10,
@@ -100,6 +108,7 @@ let all_product = [
     category: "miniatures",
     image: p10_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 11,
@@ -107,6 +116,7 @@ let all_product = [
     category: "miniatures",
     image: p11_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 12,
@@ -114,6 +124,7 @@ let all_product = [
     category: "miniatures",
     image: p12_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 13,
@@ -121,6 +132,7 @@ let all_product = [
     category: "sceneryterrain",
     image: p13_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 14,
@@ -128,6 +140,7 @@ let all_product = [
     category: "sceneryterrain",
     image: p14_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 15,
@@ -135,6 +148,7 @@ let all_product = [
     category: "sceneryterrain",
     image: p15_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 16,
@@ -142,6 +156,7 @@ let all_product = [
     category: "sceneryterrain",
     image: p16_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 17,
@@ -149,6 +164,7 @@ let all_product = [
     category: "sceneryterrain",
     image: p17_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 18,
@@ -156,6 +172,7 @@ let all_product = [
     category: "sceneryterrain",
     image: p18_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 19,
@@ -163,6 +180,7 @@ let all_product = [
     category: "sceneryterrain",
     image: p19_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 20,
@@ -170,6 +188,7 @@ let all_product = [
     category: "sceneryterrain",
     image: p20_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 21,
@@ -177,6 +196,7 @@ let all_product = [
     category: "sceneryterrain",
     image: p21_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 22,
@@ -184,6 +204,7 @@ let all_product = [
     category: "sceneryterrain",
     image: p22_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 23,
@@ -191,6 +212,7 @@ let all_product = [
     category: "sceneryterrain",
     image: p23_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 24,
@@ -198,6 +220,7 @@ let all_product = [
     category: "sceneryterrain",
     image: p24_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 25,
@@ -205,6 +228,7 @@ let all_product = [
     category: "books",
     image: p25_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 26,
@@ -212,6 +236,7 @@ let all_product = [
     category: "books",
     image: p26_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 27,
@@ -219,6 +244,7 @@ let all_product = [
     category: "books",
     image: p27_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 28,
@@ -226,6 +252,7 @@ let all_product = [
     category: "books",
     image: p28_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 29,
@@ -233,6 +260,7 @@ let all_product = [
     category: "books",
     image: p29_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   {
     id: 30,
@@ -240,6 +268,7 @@ let all_product = [
     category: "books",
     image: p30_img,
     price: 85.0,
+    description: "Sculpted by David Soderquist",
   },
   
 ];
