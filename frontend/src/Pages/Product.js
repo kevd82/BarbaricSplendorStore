@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import {ShopContext} from "../Context/ShopContext.js";
 import {useParams} from "react-router-dom";
-import Breadcrumb from "../Components/Breadcrumb/Breadcrumb.js";
 import DisplayProduct from "../Components/DisplayProduct/DisplayProduct.js";
 
 const Product = () => {
@@ -10,7 +9,6 @@ const Product = () => {
     const product = all_product.find((e)=> e.id===Number(productId));
   return (
     <div>
-      <Breadcrumb product={product}/>
       <DisplayProduct product={product}/>
     </div>
   )

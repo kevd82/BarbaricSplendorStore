@@ -32,10 +32,10 @@ import p30_img from "./product_30.png";
 let all_product = [
   {
     id: 1,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Chick jacket",
     category: "miniatures",
     image: p1_img,
-    price: 50.0,
+    price: 350.0,
     description: "Sculpted by David Soderquist",
   },
   {

@@ -32,7 +32,7 @@ const DisplayProduct = (props) => {
             ${product.price}
         </div>
         <div className="displayproduct-right-description">
-            {product.description}
+          {product.description}
         </div>
           <button>ADD TO CART</button>
         </div>
