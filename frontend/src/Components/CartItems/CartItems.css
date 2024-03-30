@@ -1,0 +1,22 @@
+.cartitems-quantity {
+    background-image: url("../Assets/Faeded.jpg"); 
+    background-size: cover; 
+    color: #ff4141;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: .5px;
+    border-radius: 7px;
+}
+
+.cartitems-remove button {
+    display: flex;
+    align-items: center;
+    background-image: url("../Assets/Faeded.jpg"); 
+    background-size: cover; 
+    color: #ff4141;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: .5px;
+    gap: 10px;
+    border-radius: 7px;
+}
+
+

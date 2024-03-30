@@ -23,17 +23,19 @@ const CartItems = () => {
                 {
                     return <div>
                         <div className="cartitems-format">
-                            <img src="" alt="" className="carticon-product-icon"/>
-                            <p></p>
-                            <p></p>
-                            <button className="cartitems-quantity"></button>
-                            <p></p>
-                            <img src={remove_icon} onClick={()=>{removeFromCart()}} alt="" />
+                            <img src={e.image} alt="" className="carticon-product-icon"/>
+                            <p>{e.name}</p>
+                            <p>${e.price}</p>
+                            <button className="cartitems-quantity">{cartItems[e.id]}</button>
+                            <p>${e.price*cartItems[e.id]}</p>
+                            <div className="cartitems-remove">
+                            <button onClick={()=>{removeFromCart(e.id)}}><img src={remove_icon}  alt=""/> Remove Item</button>
+                            </div>
                         </div>
                         <hr />
                     </div>
                 }
-            })}
+            })};
         </div>
     )
 }
