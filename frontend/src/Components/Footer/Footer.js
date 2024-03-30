@@ -23,6 +23,9 @@ const Footer = () => {
                     <p>Logo by Gilead.</p>
                     <p>Clipart by Gilead and MrZarono.</p>
                 </div>
+                <div className="footer-logo">
+                <img src={footer_logo} alt="" />       
+                </div>  
             </div>
         </div>
     )

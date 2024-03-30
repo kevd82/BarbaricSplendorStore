@@ -31,6 +31,7 @@ const Navbar = () => {
       <div className="nav-logo">
         <img src={logo} alt="" />
       </div> 
+      
       <ul className="nav-menu">
         <li onClick={()=>{setMenu("home")}}><Link style={{color: "black", textDecoration: "none"}} to="/">Home</Link>{menu==="home"?<hr/>:<></>} </li>
         <li onClick={()=>{setMenu("miniatures")}}><Link style={{ color: "black", textDecoration: "none"}} to="/miniatures">Miniatures</Link>{menu==="miniatures"?<hr/>:<></>}</li>
@@ -43,8 +44,8 @@ const Navbar = () => {
         <Link to="/cart"><img src={cart_icon} alt=""/></Link> 
         <div className="nav-cart-count">0</div>
       </div>
-      <div className="nav-image">
-        <img src={randomImage} alt="" />
+      <div className="nav-image-motto">
+        <img src={randomImage} alt="" /><h2>Be Savage!</h2>
       </div> 
     </div>
   )

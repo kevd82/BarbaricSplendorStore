@@ -8,6 +8,26 @@
     border-bottom: 3px solid Black;
 }
 
+.nav-logo {
+    display: flex;
+}
+
+.nav-image-motto {
+    display: flex;
+    justify-content: space-around;
+    font-family: Crom;
+    src: url("../Assets/Crom_v1.ttf");
+    color: #ff4141;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: .5px;
+    font-size: 22px;
+    font-weight: 600; 
+}
+
+.nav-image-motto h2 {
+    margin-left: 10px;
+}
+
 .nav-menu{
     display: flex;
     align-items: center;
