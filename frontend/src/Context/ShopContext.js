@@ -15,17 +15,28 @@ const ShopContextProvider = (props)=>{
 
     const [cartItems, setCartItems] = useState(getDefaultCart());
 
-    
     const addToCart = (itemId)=>{
         setCartItems((prev)=>({...prev, [itemId]:prev[itemId] +1}))
-    }
+    };
 
     const removeFromCart = (itemId)=>{
         setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
-    }
+    };
 
-    const contextValue = {all_product, cartItems, addToCart, removeFromCart};
-    console.log(cartItems);
+    const getTotalCartAmount = ()=>{
+        let totalAmount=0;
+        for(const item in cartItems)
+        {
+            if(cartItems[item]>0)
+            {
+                let itemInfo = all_product.find((product)=>product.id===Number(item));
+                totalAmount+= itemInfo.price*cartItems[item];
+            }
+        }
+        return totalAmount;
+    };
+
+    const contextValue = {all_product, cartItems, addToCart, removeFromCart, getTotalCartAmount};
 
     
 
