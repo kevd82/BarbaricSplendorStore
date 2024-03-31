@@ -19,7 +19,14 @@
     border-bottom: 1px solid #454545;
 }
 
+.cartitems-format {
+    font-size: 17px;
+    font-weight: 500;
+}
 
+.carticon-product-icon {
+    height: 62px;
+}
 
 .cartitems-quantity {
     background-image: url("../Assets/Faeded.jpg"); 
@@ -28,6 +35,26 @@
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: .5px;
     border-radius: 7px;
+    width: 64px;
+    height: 50px;
+}
+
+.cartitems-down {
+    display: flex;
+    margin: 100px 0px;
+}
+
+.cartitems-total {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap: 40px;
+}
+
+.cartitems-total h2 {
+    font-size: 25px;
+    font-weight: 650;
 }
 
 .cartitems-remove button {
@@ -40,6 +67,44 @@
     -webkit-text-stroke-width: .5px;
     gap: 10px;
     border-radius: 7px;
+}
+
+.cartitems-total-item {
+    border-bottom: 1px solid #454545;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.checkout-button {
+    width: 262px;
+    height: 58px;
+    background-image: url("../Assets/Faeded.jpg"); 
+    background-size: cover; 
+    color: #ff4141;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: .5px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cartitems-promocode {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 15px; 
+}
+
+.cartitems-promobox button {
+    background-image: url("../Assets/Faeded.jpg"); 
+    background-size: cover; 
+    color: #ff4141;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: .5px;
+    border-radius: 7px;
+    width: 64px;
 }
 
 
