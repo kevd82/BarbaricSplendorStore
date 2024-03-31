@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import "./Navbar.css";
 import {Link} from "react-router-dom";
 import logo from "../Assets/logo.png";
@@ -8,6 +8,7 @@ import nav_image3 from "../Assets/nav_image3.png";
 import nav_image4 from "../Assets/nav_image4.png";
 import nav_image5 from "../Assets/nav_image5.png";
 import cart_icon from "../Assets/cart_icon.png";
+import { ShopContext } from '../../Context/ShopContext';
 
 
 
@@ -16,6 +17,8 @@ const Navbar = () => {
   const [menu, setMenu] = useState("");
 
   const [randomImage, setRandomImage] = useState("");
+
+  const {getTotalCartItems} = useContext(ShopContext);
   
   useEffect(()=>{
     const images= [nav_image, nav_image2, nav_image3, nav_image4, nav_image5];
@@ -42,7 +45,7 @@ const Navbar = () => {
       <div className="nav-login-cart">
         <Link to="/loginreg"><button>Login</button></Link>
         <Link to="/cart"><img src={cart_icon} alt=""/></Link> 
-        <div className="nav-cart-count">0</div>
+        <div className="nav-cart-count">{getTotalCartItems()}</div>
       </div>
       <div className="nav-image-motto">
         <img src={randomImage} alt="" /><h2>Be Savage!</h2>
