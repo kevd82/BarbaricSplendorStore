@@ -34,6 +34,37 @@ app.post("/upload", upload.single("product"), (req, res)=>{
     })
 })
 
+const Product = mongoose.model("Product", {
+    id:{
+        type: Number,
+        required:true,
+    },
+    name:{
+        type:String,
+        required:true,
+    },
+    image:{
+        type:String,
+        rewuired:true,
+    },
+    category:{
+        type:String,
+        required:true,
+    },
+    price:{
+        type:Number,
+        required:true,
+    },
+    created:{
+        type:Date,
+        default:Date.now,
+    },
+    available:{
+        type:Boolean,
+        default:true,
+    }
+})
+
 app.listen(port,(error)=>{
     if (!error){
         console.log("You have conquered port "+port+"!")
