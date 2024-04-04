@@ -86,7 +86,16 @@ app.post("/addproduct", async (req,res)=>{
     });
     console.log(product);
     await product.save();
-    console.log("saved");
+    console.log("Saved "+req.body.name);
+    res.json({
+        success:true,
+        name:req.body.name,
+    })
+})
+
+app.post("/removeproduct", async (req,res)=>{
+    await Product.findOneAndDelete({id:req.body.id});
+    console.log("Removed "+req.body.name);
     res.json({
         success:true,
         name:req.body.name,
@@ -95,7 +104,9 @@ app.post("/addproduct", async (req,res)=>{
 
 app.listen(port,(error)=>{
     if (!error){
-        console.log("You have conquered port "+port+"!")
+        console.log("You have conquered port "+port+"!");
+        
+        
     }
     else
     {
