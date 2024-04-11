@@ -39,13 +39,13 @@ const Product = mongoose.model("Product", {
         type: Number,
         required:true,
     },
-    name:{
+    title:{
         type:String,
         required:true,
     },
     image:{
         type:String,
-        rewuired:true,
+        required:true,
     },
     category:{
         type:String,
