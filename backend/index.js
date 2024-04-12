@@ -55,6 +55,14 @@ const Product = mongoose.model("Product", {
         type:Number,
         required:true,
     },
+    description:{
+        type: String,
+        required:true,
+    },
+    weight:{
+        type:Number,
+        required:true,
+    },
     created:{
         type:Date,
         default:Date.now,

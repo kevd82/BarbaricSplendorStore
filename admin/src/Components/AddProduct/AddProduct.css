@@ -1,0 +1,74 @@
+.add-product {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px 50px;
+    margin: 20px 30px;
+    border-radius: 6px;
+    background: white;
+}
+
+.addproduct-itemfield {
+    width: 100%;
+    color: #7b7b7b;
+    font-size: 16px;
+
+}
+
+.addproduct-itemfield input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    padding-left: 15px;
+    border: 1px solid #c3c3c3;
+    outline: none;
+    color: #7b7b7b;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.addproduct-price {
+    display: flex;
+    gap: 40px;
+}
+
+.addproduct-itemfield textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    padding-left: 15px;
+    border: 1px solid #c3c3c3;
+    outline: none;
+    color: #7b7b7b;
+    font-size: 14px;
+}
+
+.add-product-selector {
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    color: #7b7b7b;
+    border: 1px solid #7b7b7b8d;
+    border-radius: 4px;
+}
+
+.addproduct-btn {
+    padding: 20px 40px;
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ff4141;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    background-image: url("../../assets/Faeded.jpg");
+    background-position: cover;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 75px;
+    outline: none;
+    cursor: pointer;
+}
+

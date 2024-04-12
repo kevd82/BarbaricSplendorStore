@@ -6,12 +6,16 @@ const AddProduct = () => {
     <div className="add-product">
       <div className="addproduct-itemfield">
         <p>Product Title</p>
-        <input type="text" name="title" placeholder="Enter product title here." />
+        <input type="text" name="title" placeholder="Enter product title" />
       </div>
       <div className="addproduct-price">
         <div className="addproduct-itemfield">
           <p>Price</p>
-          <input type="text" name="price" placeholder="Enter product price here."/>
+          <input type="text" name="price" placeholder="Enter product price"/>
+        </div>
+        <div className="addproduct-itemfield">
+          <p>Weight</p>
+          <input type="number" name="weight" placeholder="Enter product weight"/>
         </div>
       </div>
       <div className="addproduct-itemfield">
@@ -25,7 +29,11 @@ const AddProduct = () => {
       </div>
       <div className="addproduct-itemfield">
         <p>Product Image</p>
-        <input type="text" name="image" placeholder="Enter image link here."/>
+        <input type="text" name="image" placeholder="Enter product image link"/>
+      </div>
+      <div className="addproduct-itemfield">
+        <p>Description</p>
+        <textarea type="text" name="description" placeholder="Enter product description, including sculptor and painter"/>
       </div>
       <button className="addproduct-btn">ADD PRODUCT</button>
     </div>
