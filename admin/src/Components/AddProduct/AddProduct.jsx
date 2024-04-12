@@ -2,6 +2,20 @@ import React from 'react';
 import "./AddProduct.css"; 
 
 const AddProduct = () => {
+
+  const [productDetails, setProductDetails] = useState({
+    title:"",
+    image:"",
+    category:"miniatures",
+    price:"",
+    description:"",
+    weight:"",
+  });
+
+  const changeHandler = (e)=>{
+    setProductDetails({...productDetails,[e.target.name]:e.target.value})
+  }
+
   return (
     <div className="add-product">
       <div className="addproduct-itemfield">
