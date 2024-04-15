@@ -47,6 +47,10 @@ const Product = mongoose.model("Product", {
         type:String,
         required:true,
     },
+    imagetwo:{
+        type:String,
+        required:true,
+    },
     category:{
         type:String,
         required:true,
@@ -87,26 +91,28 @@ app.post("/addproduct", async (req,res)=>{
     }
     const product = new Product({
         id:id,
-        name:req.body.name,
+        title:req.body.title,
         image:req.body.image,
+        imagetwo:req.body.imagetwo,
         category:req.body.category,
         price:req.body.price,
+        weight:req.body.weight,
     });
     console.log(product);
     await product.save();
-    console.log("Saved "+req.body.name);
+    console.log("Saved "+req.body.title);
     res.json({
         success:true,
-        name:req.body.name,
+        name:req.body.title,
     })
 })
 
 app.post("/removeproduct", async (req,res)=>{
     await Product.findOneAndDelete({id:req.body.id});
-    console.log("Removed "+req.body.name);
+    console.log("Removed "+req.body.title);
     res.json({
         success:true,
-        name:req.body.name,
+        name:req.body.title,
     })
 })
 
