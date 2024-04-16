@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./AddProduct.css"; 
 
 const AddProduct = () => {
@@ -6,6 +6,7 @@ const AddProduct = () => {
   const [productDetails, setProductDetails] = useState({
     title:"",
     image:"",
+    imagetwo:"",
     category:"miniatures",
     price:"",
     description:"",
