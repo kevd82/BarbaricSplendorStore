@@ -4,6 +4,17 @@ import upload_area from "../../assets/upload_area.svg";
 
 const AddProduct = () => {
 
+  const [image, setImage] = useState(false);
+  const [imagetwo, setImageTwo] = useState(false);
+
+  const imageHandler = (e)=>{
+    setImage(e.target.files[0]);
+  }
+
+  const imageHandlerTwo = (e)=>{
+    setImageTwo(e.target.files[0]);
+  }
+
   const [productDetails, setProductDetails] = useState({
     title:"",
     image:"",
@@ -47,16 +58,16 @@ const AddProduct = () => {
         <div className="addproduct-itemfield">
           <p>Product Image</p>
           <label htmlFor="file-input">
-            <img src={upload_area} className="addproduct-thumbnail-img" alt=""/>
+            <img src={image?URL.createObjectURL(image):upload_area} className="addproduct-thumbnail-img" alt=""/>
           </label>
-          <input type="file" name="image" id="file-input" hidden/>
+          <input onChange={imageHandler} type="file" name="image" id="file-input" hidden/>
         </div>
         <div className="addproduct-itemfield">
           <p>Product Image Two</p>
             <label htmlFor="file-input">
-              <img src={upload_area} className="addproduct-thumbnail-img" alt=""/>
+              <img src={imagetwo?URL.createObjectURL(imagetwo):upload_area} className="addproduct-thumbnail-img" alt=""/>
             </label>
-            <input type="file" name="imagetwo" id="file-input" hidden/>
+            <input onChange={imageHandlerTwo} type="file" name="imagetwo" id="file-input" hidden/>
         </div>
 
       </div>
