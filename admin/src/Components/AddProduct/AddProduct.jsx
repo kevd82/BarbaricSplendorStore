@@ -43,17 +43,22 @@ const AddProduct = () => {
           <option value="books">Books</option>
         </select>
       </div>
-      <div className="addproduct-itemfield">
-        <p>Product Image</p>
-        <label htmlFor="file-input">
-          <img src={upload_area} className="addproduct-thumbnail-img" alt=""/>
-        </label>
-        <input type="file" name="image" id="file-input" hidden/>
-        <p>Product Image Two</p>
-        <label htmlFor="file-input">
-          <img src={upload_area} className="addproduct-thumbnail-img" alt=""/>
-        </label>
-        <input type="file" name="imagetwo" id="file-input" hidden/>
+      <div className="addproduct-images">
+        <div className="addproduct-itemfield">
+          <p>Product Image</p>
+          <label htmlFor="file-input">
+            <img src={upload_area} className="addproduct-thumbnail-img" alt=""/>
+          </label>
+          <input type="file" name="image" id="file-input" hidden/>
+        </div>
+        <div className="addproduct-itemfield">
+          <p>Product Image Two</p>
+            <label htmlFor="file-input">
+              <img src={upload_area} className="addproduct-thumbnail-img" alt=""/>
+            </label>
+            <input type="file" name="imagetwo" id="file-input" hidden/>
+        </div>
+
       </div>
       <div className="addproduct-itemfield">
         <p>Description</p>

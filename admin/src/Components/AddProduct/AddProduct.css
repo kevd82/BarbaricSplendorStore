@@ -33,6 +33,11 @@
     gap: 40px;
 }
 
+.addproduct-images {
+    display: flex;
+    gap: 40px;
+}
+
 .addproduct-itemfield textarea {
     box-sizing: border-box;
     width: 100%;
