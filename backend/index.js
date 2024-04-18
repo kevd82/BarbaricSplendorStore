@@ -30,7 +30,7 @@ app.use("/images", express.static("upload/images"))
 app.post("/upload", upload.single("product"), (req, res)=>{
     res.json({
         success:1,
-        image_url: `http://localhost:${port}/images/${req.file.filename}`
+        image_url: `http://localhost:${port}/upload/images/${req.file.filename}`
     })
 })
 
@@ -44,10 +44,6 @@ const Product = mongoose.model("Product", {
         required:true,
     },
     image:{
-        type:String,
-        required:true,
-    },
-    imagetwo:{
         type:String,
         required:true,
     },
@@ -93,10 +89,10 @@ app.post("/addproduct", async (req,res)=>{
         id:id,
         title:req.body.title,
         image:req.body.image,
-        imagetwo:req.body.imagetwo,
         category:req.body.category,
         price:req.body.price,
         weight:req.body.weight,
+        description:req.body.description,
     });
     console.log(product);
     await product.save();

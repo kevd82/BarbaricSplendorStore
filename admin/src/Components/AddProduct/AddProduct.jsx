@@ -13,7 +13,6 @@ const AddProduct = () => {
   const [productDetails, setProductDetails] = useState({
     title:"",
     image:"",
-    imagetwo:"",
     category:"miniatures",
     price:"",
     description:"",
@@ -24,26 +23,63 @@ const AddProduct = () => {
     setProductDetails({...productDetails,[e.target.name]:e.target.value})
   }
 
+  const Add_Product = async ()=>{
+    console.log(productDetails);
+    let responseData;
+    let product = productDetails;
+
+    let formData = new FormData();
+    formData.append("product", image);
+
+    await fetch("http://localhost:4000/upload", {
+      method: "POST",
+      headers:{
+        Accept: "application/json", 
+      },
+      body:formData,
+    }).then((res)=> res.json()).then((data)=>{responseData=data});
+
+    if(responseData.success)
+    {
+      product.image = responseData.image_url;
+      console.log(product);
+      await fetch("http://localhost:4000/addproduct", {
+        method: "POST",
+        headers: {
+          Accept:"application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(product),
+      }).then((res)=>res.json()).then((data)=>{
+          data.success?alert("Product Added"):alert("Product Not Added")
+      })
+    }
+  }
+
   return (
     <div className="add-product">
       <div className="addproduct-itemfield">
         <p>Product Title</p>
-        <input type="text" name="title" placeholder="Enter product title" />
+        <input value={productDetails.title} onChange={changeHandler} type="text" name="title" placeholder="Enter product title" />
       </div>
       <div className="addproduct-price">
         <div className="addproduct-itemfield">
           <p>Price</p>
-          <input type="text" name="price" placeholder="Enter product price"/>
+          <input value={productDetails.price} onChange={changeHandler} type="text" name="price" placeholder="Enter product price"/>
         </div>
         <div className="addproduct-itemfield">
           <p>Weight</p>
-          <input type="number" name="weight" placeholder="Enter product weight"/>
+          <input value={productDetails.weight} onChange={changeHandler} type="number" name="weight" placeholder="Enter product weight"/>
         </div>
       </div>
       <div className="addproduct-itemfield">
+        <p>Description</p>
+        <input value={productDetails.description} onChange={changeHandler} type="text" name="description" placeholder="Enter product description, including sculptor and painter"/>
+      </div>
+      <div className="addproduct-itemfield">
         <p>Product Category</p>
-        <select name="category" className="add-product-selector">
-          <option value="" disabled selected hidden>Select Category</option>
+        <select value={productDetails.category} onChange={changeHandler} name="category" className="add-product-selector">
+          <option value="" disabled defaultValue hidden>Select Category</option>
           <option value="miniatures">Miniatures</option>
           <option value="sceneryterrain">Scenery/Terrain</option>
           <option value="books">Books</option>
@@ -59,11 +95,8 @@ const AddProduct = () => {
         </div>
         
       </div>
-      <div className="addproduct-itemfield">
-        <p>Description</p>
-        <textarea type="text" name="description" placeholder="Enter product description, including sculptor and painter"/>
-      </div>
-      <button className="addproduct-btn">ADD PRODUCT</button>
+      
+      <button onClick={()=>{Add_Product()}} className="addproduct-btn">ADD PRODUCT</button>
     </div>
   )
 }

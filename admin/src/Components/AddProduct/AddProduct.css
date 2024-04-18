@@ -71,6 +71,7 @@
     background-image: url("../../assets/Faeded.jpg");
     background-position: cover;
     margin-bottom: 20px;
+    margin-top: 20px;
     border: 1px solid black;
     border-radius: 75px;
     outline: none;
