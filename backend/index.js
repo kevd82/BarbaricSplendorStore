@@ -25,12 +25,12 @@ const storage = multer.diskStorage({
 
 const upload = multer({storage:storage})
 
-app.use("/images", express.static("upload/images"))
+app.use("/images", express.static("upload/images"));
 
 app.post("/upload", upload.single("product"), (req, res)=>{
     res.json({
         success:1,
-        image_url: `http://localhost:${port}/upload/images/${req.file.filename}`
+        image_url: `http://localhost:4000/upload/images/${req.file.filename}`
     })
 })
 
@@ -86,13 +86,13 @@ app.post("/addproduct", async (req,res)=>{
         id=1;
     }
     const product = new Product({
-        id:id,
-        title:req.body.title,
-        image:req.body.image,
-        category:req.body.category,
-        price:req.body.price,
-        weight:req.body.weight,
-        description:req.body.description,
+        id: id,
+        title: req.body.title,
+        image: req.body.image,
+        category: req.body.category,
+        price: req.body.price,
+        weight: req.body.weight,
+        description: req.body.description,
     });
     console.log(product);
     await product.save();
