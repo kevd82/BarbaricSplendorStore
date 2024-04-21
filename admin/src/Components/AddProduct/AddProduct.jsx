@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {useNavigate} from "react-router-dom";
 import "./AddProduct.css"; 
 import upload_area from "../../assets/upload_area.svg";
 
@@ -18,6 +19,8 @@ const AddProduct = () => {
     description:"",
     weight:"",
   });
+
+  const navigate = useNavigate();
 
   const changeHandler = (e)=>{
     setProductDetails({...productDetails,[e.target.name]:e.target.value})
@@ -52,6 +55,7 @@ const AddProduct = () => {
         body: JSON.stringify(product),
       }).then((res)=>res.json()).then((data)=>{
           data.success?alert("Product Added"):alert("Product Not Added")
+          navigate("/listproduct")
       })
     }
   }
