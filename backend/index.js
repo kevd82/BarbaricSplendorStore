@@ -46,6 +46,15 @@ const Product = mongoose.model("Product", {
         type:String,
         required:true,
     },
+    imagetwo:{
+        type:String,
+    },
+    imagethree:{
+        type:String,
+    },
+    imagefour:{
+        type:String,
+    },
     category:{
         type:String,
         required:true,
@@ -61,6 +70,10 @@ const Product = mongoose.model("Product", {
     weight:{
         type:Number,
         required:true,
+    },
+    stock:{
+        type:Number,
+        required:true
     },
     created:{
         type:Date,
@@ -88,6 +101,9 @@ app.post("/addproduct", async (req,res)=>{
         id: id,
         title: req.body.title,
         image: req.body.image,
+        imagetwo: req.body.imagetwo,
+        imagethree: req.body.imagethree,
+        imagefour: req.body.imagefour,
         category: req.body.category,
         price: req.body.price,
         weight: req.body.weight,
@@ -104,7 +120,7 @@ app.post("/addproduct", async (req,res)=>{
 
 app.post("/removeproduct", async (req,res)=>{
     await Product.findOneAndDelete({id:req.body.id});
-    console.log("Removed "+req.body.title);
+    console.log("Removed product ID: "+req.body.id);
     res.json({
         success:true,
         name:req.body.title,

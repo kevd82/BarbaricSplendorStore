@@ -14,10 +14,14 @@ const AddProduct = () => {
   const [productDetails, setProductDetails] = useState({
     title:"",
     image:"",
+    imagetwo:"",
+    imagethree:"",
+    imagefour:"",
     category:"miniatures",
     price:"",
     description:"",
     weight:"",
+    stock: 0,
   });
 
   const navigate = useNavigate();
@@ -74,6 +78,10 @@ const AddProduct = () => {
         <div className="addproduct-itemfield">
           <p>Weight</p>
           <input value={productDetails.weight} onChange={changeHandler} type="number" name="weight" placeholder="Enter product weight"/>
+        </div>
+        <div className="addproduct-itemfield">
+          <p>Stock</p>
+          <input value={productDetails.stock} onChange={changeHandler} type="number" name="stock" placeholder="Enter product stock"/>
         </div>
       </div>
       <div className="addproduct-itemfield">
