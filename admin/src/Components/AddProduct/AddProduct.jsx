@@ -21,7 +21,7 @@ const AddProduct = () => {
     price:"",
     description:"",
     weight:"",
-    stock: 0,
+    stock:"",
   });
 
   const navigate = useNavigate();
@@ -73,7 +73,7 @@ const AddProduct = () => {
       <div className="addproduct-price">
         <div className="addproduct-itemfield">
           <p>Price</p>
-          <input value={productDetails.price} onChange={changeHandler} type="text" name="price" placeholder="Enter product price"/>
+          <input value={productDetails.price} onChange={changeHandler} type="number" name="price" placeholder="Enter product price"/>
         </div>
         <div className="addproduct-itemfield">
           <p>Weight</p>
@@ -105,7 +105,18 @@ const AddProduct = () => {
           </label>
           <input onChange={imageHandler} type="file" name="image" id="file-input" hidden/>
         </div>
-        
+        <div className="addproduct-itemfield">
+          <p>Image Two</p>
+          <input value={productDetails.imagetwo} onChange={changeHandler} type="text" name="imagetwo" placeholder="Enter image link"/>
+        </div>
+        <div className="addproduct-itemfield">
+          <p>Image Three</p>
+          <input value={productDetails.imagethree} onChange={changeHandler} type="text" name="imagethree" placeholder="Enter image link"/>
+        </div>
+        <div className="addproduct-itemfield">
+          <p>Image Four</p>
+          <input value={productDetails.imagefour} onChange={changeHandler} type="text" name="imagefour" placeholder="Enter image link"/>
+        </div>
       </div>
       
       <button onClick={()=>{Add_Product()}} className="addproduct-btn">ADD PRODUCT</button>
