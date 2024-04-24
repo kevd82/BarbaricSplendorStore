@@ -86,7 +86,7 @@ const AddProduct = () => {
       </div>
       <div className="addproduct-itemfield">
         <p>Description</p>
-        <input value={productDetails.description} onChange={changeHandler} type="text" name="description" placeholder="Enter product description, including sculptor and painter"/>
+        <input value={productDetails.description} onChange={changeHandler} type="text" name="description" placeholder="Enter product description"/>
       </div>
       <div className="addproduct-itemfield">
         <p>Product Category</p>
