@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     justify-content: space-around;
-    padding: 15px;
+    padding: 15px 15px 5px 15px;
     box-shadow: 0px 1px 3px -2px black;
     background-image: url("../Assets/Faeded.jpg"); 
     background-size: cover; 
@@ -10,10 +10,12 @@
 
 .nav-logo {
     display: flex;
+    height: 50%;
 }
 
 .nav-image-motto {
     display: flex;
+    height: 50%;
     justify-content: space-around;
     font-family: Crom;
     src: url("../Assets/Crom_v1.ttf");
