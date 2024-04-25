@@ -157,6 +157,10 @@ const Users = mongoose.model("Users" ,{
     },
 })
 
+app.post("/signup", async (reg, res)=>{
+    
+})
+
 app.listen(port,(error)=>{
     if (!error){
         console.log("You have conquered port "+port+"!");
