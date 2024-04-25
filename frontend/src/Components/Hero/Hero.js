@@ -1,6 +1,5 @@
 import React from 'react';
 import "./Hero.css";
-import News from "../News/News.js";
 
 
 const Hero = () => {
@@ -8,10 +7,10 @@ const Hero = () => {
     <div className="hero">
         <div className="hero-text">
             <h1>Welcome to Barbaric Splendor!</h1>
-            <h2>Miniatures and more for your barbarian/sword and sorcery gaming.</h2>
+            <h2>Miniatures and more for your barbarian gaming.</h2>
           </div>
-        <div className="hero-news">
-          <News/>
+        <div className="hero-featured">
+          
         </div>
     </div>
   )

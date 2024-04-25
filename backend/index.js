@@ -134,6 +134,29 @@ app.get("/allproducts", async (req,res)=>{
     res.send(products);
 })
 
+const Users = mongoose.model("Users" ,{
+    name:{
+        type:String,
+        required:true,
+    },
+    email:{
+        type:String,
+        required:true,
+        unique:true,
+    },
+    password:{
+        type:String,
+        required:true,
+    },
+    cartData:{
+        type:Object,
+    },
+    date:{
+        type:Date,
+        default:Date.now,
+    },
+})
+
 app.listen(port,(error)=>{
     if (!error){
         console.log("You have conquered port "+port+"!");
