@@ -21,7 +21,7 @@ const Footer = () => {
                 <div className="footer-copyright">
                     <p>Copyright @ 2024 - All Rights Reserved.</p>
                     <p>Logo by Gilead.</p>
-                    <p>Clipart by Gilead and MrZarono.</p>
+                    <p>Clipart by Gilead.</p>
                 </div>
                 <div className="footer-logo">
                 <img src={footer_logo} alt="" />       

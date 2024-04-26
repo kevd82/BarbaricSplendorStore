@@ -4,9 +4,6 @@ import {Link} from "react-router-dom";
 import logo from "../Assets/logo.png";
 import nav_image from "../Assets/nav_image.png";
 import nav_image2 from "../Assets/nav_image2.png";
-import nav_image3 from "../Assets/nav_image3.png";
-import nav_image4 from "../Assets/nav_image4.png";
-import nav_image5 from "../Assets/nav_image5.png";
 import cart_icon from "../Assets/cart_icon.png";
 import { ShopContext } from '../../Context/ShopContext';
 
@@ -21,7 +18,7 @@ const Navbar = () => {
   const {getTotalCartItems} = useContext(ShopContext);
   
   useEffect(()=>{
-    const images= [nav_image, nav_image2, nav_image3, nav_image4, nav_image5];
+    const images= [nav_image, nav_image2];
 
     const randomImageIndex =
       Math.floor(Math.random()*images.length);

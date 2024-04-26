@@ -186,6 +186,11 @@ app.post("/signup", async (req, res)=>{
     res.json({success:true, token})
 })
 
+app.post("/login", async (req,res)=>{
+    let user = await Users.findOne({email:req.body.email});
+})
+
+
 app.listen(port,(error)=>{
     if (!error){
         console.log("You have conquered port "+port+"!");
