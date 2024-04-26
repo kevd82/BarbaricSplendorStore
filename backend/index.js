@@ -135,7 +135,7 @@ app.get("/allproducts", async (req,res)=>{
 })
 
 const Users = mongoose.model("Users" ,{
-    name:{
+    username:{
         type:String,
         required:true,
     },
@@ -158,7 +158,33 @@ const Users = mongoose.model("Users" ,{
 })
 
 app.post("/signup", async (reg, res)=>{
-    
+
+    let check = await Users.findOne({email:req.body.email});
+    if (check) {
+        return res.status(400).json({success:false, errors:"Email address already in use."})
+    }
+    let cart = {};
+    for (let i = 0; i < 300; index++) {
+        cart[i] = 0;
+    }
+    const user = new Users ({
+        name:req.body.username,
+        email:req.body.email,
+        password:req.body.password,
+        cartData:cart,
+    })
+
+    await user.save();
+
+    const data = {
+        user:{
+            id:user.id
+        }
+    }
+
+    const token = jwt.sign(data, "secret_ecom");
+    res.json({success:true, token})
+
 })
 
 app.listen(port,(error)=>{
