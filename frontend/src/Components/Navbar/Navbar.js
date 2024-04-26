@@ -48,7 +48,7 @@ const Navbar = () => {
         <div className="nav-cart-count">{getTotalCartItems()}</div>
       </div>
       <div className="nav-image-motto">
-        <img src={randomImage} alt="" /><h2>Be Savage!</h2>
+        <img src={randomImage} alt="" /><h2>Game Savage</h2>
       </div> 
     </div>
   )
