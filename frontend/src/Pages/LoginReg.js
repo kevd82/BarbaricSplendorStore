@@ -14,14 +14,15 @@ const LoginReg = () => {
           <input type="email" placeholder="Email Address"/>
           <input type="password" placeholder="Password"/>
           <button>Continue</button>
-            <div className="loginreg-agree">
+          <div className="loginreg-agree">
             <input type="checkbox" name="" id=""/>
               <p>By continuing, I agree to the terms of use & privacy policy.</p>
             </div>
-          <p className="loginreg-login">Already have an account? <span>Login here</span></p>
-          <p className="loginreg-login">Would you like to create an account? <span>Click here</span></p>
-          
-        </div>      
+            {state==="Signup"?
+            <p className="loginreg-login">Already have an account? <span onClick={()=>{setState("Login")}}>Login here</span></p>
+            :<p className="loginreg-login">Would you like to create an account? <span onClick={()=>{setState("Signup")}}>Register here</span></p>
+            }
+          </div>      
       </div>
     </div>
   )
