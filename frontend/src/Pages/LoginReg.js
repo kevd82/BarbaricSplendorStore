@@ -10,7 +10,7 @@ const LoginReg = () => {
       <div className="loginreg-container">
         <h1>{state}</h1>
         <div className="loginreg-fields">
-          <input type="text" placeholder="User Name"/>
+          {state==="Signup"? <input type="text" placeholder="User Name"/>:<></> } 
           <input type="email" placeholder="Email Address"/>
           <input type="password" placeholder="Password"/>
           <button>Continue</button>
@@ -19,7 +19,7 @@ const LoginReg = () => {
               <p>By continuing, I agree to the terms of use & privacy policy.</p>
             </div>
           <p className="loginreg-login">Already have an account? <span>Login here</span></p>
-          
+          <p className="loginreg-login">Would you like to create an account? <span>Click here</span></p>
           
         </div>      
       </div>
