@@ -10,12 +10,16 @@ const LoginReg = () => {
     email:"",
   })
 
+  const changeHandler = (e)=>{
+    setFormData({...formData,[e.target.name]:e.target.value})
+  }
+
   const login = async () =>{
-    console.log("Login function executed");
+    console.log("Login function executed", formData);
   }
 
   const signup = async () =>{
-    console.log("Signup function executed");
+    console.log("Signup function executed", formData);
   }
 
   return (
@@ -23,9 +27,9 @@ const LoginReg = () => {
       <div className="loginreg-container">
         <h1>{state}</h1>
         <div className="loginreg-fields">
-          {state==="Signup"? <input type="text" placeholder="User Name"/>:<></> } 
-          <input type="email" placeholder="Email Address"/>
-          <input type="password" placeholder="Password"/>
+          {state==="Signup"? <input name="username" value={formData.username} onChange={changeHandler} type="text" placeholder="User Name"/>:<></> } 
+          <input name="email"value={formData.email} onChange={changeHandler}  type="email" placeholder="Email Address"/>
+          <input name="password" value={formData.password} onChange={changeHandler} type="password" placeholder="Password"/>
           <button onClick={()=>{state==="Login"?login():signup()}} >Continue</button>
           <div className="loginreg-agree">
             <input type="checkbox" name="" id=""/>
