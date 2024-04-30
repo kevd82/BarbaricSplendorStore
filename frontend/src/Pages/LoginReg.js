@@ -4,6 +4,19 @@ import "./CSS/LoginReg.css";
 const LoginReg = () => {
 
   const [state, setState] = useState("Login");
+  const [formData, setFormData] = useState({
+    username:"",
+    password:"",
+    email:"",
+  })
+
+  const login = async () =>{
+    console.log("Login function executed");
+  }
+
+  const signup = async () =>{
+    console.log("Signup function executed");
+  }
 
   return (
     <div className="loginreg">
@@ -13,7 +26,7 @@ const LoginReg = () => {
           {state==="Signup"? <input type="text" placeholder="User Name"/>:<></> } 
           <input type="email" placeholder="Email Address"/>
           <input type="password" placeholder="Password"/>
-          <button>Continue</button>
+          <button onClick={()=>{state==="Login"?login():signup()}} >Continue</button>
           <div className="loginreg-agree">
             <input type="checkbox" name="" id=""/>
               <p>By continuing, I agree to the terms of use & privacy policy.</p>
