@@ -187,6 +187,7 @@ app.post("/signup", async (req, res)=>{
 })
 
 app.post("/login", async (req,res)=>{
+    let success = false;
     let user = await Users.findOne({email:req.body.email});
     if (user) {
         const passCompare = req.body.password === user.password;
@@ -196,15 +197,16 @@ app.post("/login", async (req,res)=>{
                     id:user.id
                 }
             }
+            success = true;
             const token = jwt.sign(data, "secret_ecom");
-            res.json({succes:true, token});
+            res.json({success, token});
         }
         else{
-            res.json({success:false, errors: "Error in login info"});
+            return res.json({success:false, errors: "Error in login info"});
         }
     }
     else {
-        res.json({success:false, errors: "Error in login info"})
+        return res.json({success:false, errors: "Error in login info"})
     }
 })
 
