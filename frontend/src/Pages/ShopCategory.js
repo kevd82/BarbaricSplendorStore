@@ -20,7 +20,7 @@ const ShopCategory = (props) => {
         {
           all_product.map((item, index)=>{
             if (props.category===item.category) {
-              return <Item key={index} id={item.id} name={item.name} image={item.image} price={item.price} description={item.description} />
+              return <Item key={index} id={item.id} title={item.title} image={item.image} price={item.price} description={item.description} />
             }
             else{
               return null;
