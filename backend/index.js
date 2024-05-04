@@ -145,14 +145,14 @@ const fetchUser= async(req,res,next)=>{
             req.user = data.user;
             next();
         } catch (error){
-
+            res.status(401).send({errors:"Please authenticate with valid token"})
         }
     }
 
 }
 
 app.post("/addtocart", fetchUser, async (req,res)=>{
-    console.log(req.body);
+    console.log(req.body, req.user);
 })
 
 const Users = mongoose.model("Users" ,{
