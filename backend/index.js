@@ -152,7 +152,9 @@ const fetchUser= async(req,res,next)=>{
 }
 
 app.post("/addtocart", fetchUser, async (req,res)=>{
-    console.log(req.body, req.user);
+
+    let userData = await Users.findOne({_id:req.user.id});
+
 })
 
 const Users = mongoose.model("Users" ,{
