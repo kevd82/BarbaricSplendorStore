@@ -10,24 +10,41 @@
 
 .nav-logo {
     display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
     height: 50%;
-}
-
-.nav-image-motto {
-    display: flex;
-    height: 50%;
-    justify-content: space-around;
     font-family: Crom;
     src: url("../Assets/Crom_v1.ttf");
     color: #ff4141;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: .5px;
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: 600; 
+}
+.nav-logo img {
+    height: 101px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.nav-image-motto {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    font-family: Crom;
+    src: url("../Assets/Crom_v1.ttf");
+    color: #ff4141;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: .5px;
+    font-size: 17px;
     font-weight: 600; 
 }
 
-.nav-image-motto h2 {
-    margin-left: 10px;
+.nav-image-motto img {
+    height: 151px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 
 .nav-menu{

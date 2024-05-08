@@ -1,9 +1,8 @@
 import React, {useState, useEffect, useContext} from 'react';
 import "./Navbar.css";
 import {Link} from "react-router-dom";
-import logo from "../Assets/logo.png";
-import nav_image from "../Assets/nav_image.png";
-import nav_image2 from "../Assets/nav_image2.png";
+import bslogo from "../Assets/bslogo.png";
+import logotwo from "../Assets/logotwo.png";
 import cart_icon from "../Assets/cart_icon.png";
 import { ShopContext } from '../../Context/ShopContext';
 
@@ -13,23 +12,23 @@ const Navbar = () => {
 
   const [menu, setMenu] = useState("");
 
-  const [randomImage, setRandomImage] = useState("");
+  // const [randomImage, setRandomImage] = useState("");
 
   const {getTotalCartItems} = useContext(ShopContext);
   
-  useEffect(()=>{
-    const images= [nav_image, nav_image2];
+  // useEffect(()=>{
+  //   const images= [nav_image, nav_image2];
 
-    const randomImageIndex =
-      Math.floor(Math.random()*images.length);
-    setRandomImage(images[randomImageIndex]);
-    }, [])
+  //   const randomImageIndex =
+  //     Math.floor(Math.random()*images.length);
+  //   setRandomImage(images[randomImageIndex]);
+  //   }, [])
   
 
   return (
     <div className="navbar">
       <div className="nav-logo">
-        <img src={logo} alt="" />
+        <h2>Barbaric</h2><img src={bslogo} alt="" /><h2>Splendor</h2>
       </div> 
       
       <ul className="nav-menu">
@@ -47,7 +46,7 @@ const Navbar = () => {
         <div className="nav-cart-count">{getTotalCartItems()}</div>
       </div>
       <div className="nav-image-motto">
-        <img src={randomImage} alt="" /><h2>Game Savage</h2>
+        <h2>Game</h2><img src={logotwo} alt="" /><h2>Savage</h2>
       </div> 
     </div>
   )
