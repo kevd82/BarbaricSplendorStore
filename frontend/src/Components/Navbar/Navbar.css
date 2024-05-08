@@ -6,6 +6,7 @@
     background-image: url("../Assets/Faeded.jpg"); 
     background-size: cover; 
     border-bottom: 3px solid Black;
+    margin-bottom: -35px;
 }
 
 .nav-logo {

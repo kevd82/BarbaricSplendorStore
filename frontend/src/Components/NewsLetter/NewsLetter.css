@@ -1,16 +1,16 @@
 .newsletter {
-    width: 65%;
-    height: 40vh;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: auto;
     margin-top: -120px;
-    padding: 0px 140px;
-    padding-top: 0px;
-    margin-bottom: 30px;
     gap: 30px;
+    background-image: url("../Assets/Faeded.jpg"); 
+    background-size: cover; 
+    padding-bottom: 25px;
 }
 
 .newsletter h1 {
@@ -41,12 +41,14 @@
 }
 
 .newsletter input {
+    justify-content: center;
+    text-align: center;
     width: 500px;
     margin-left: 30px;
     border: none;
-    outline: none;
+    outline: 1px solid black;
     color: #616161;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .newsletter div button {
@@ -65,7 +67,7 @@
     color: #ff4141;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1px;
-                
+    margin-left: -5px;
 }
 
 .newsletter div button:hover {
