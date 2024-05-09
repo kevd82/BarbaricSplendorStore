@@ -168,6 +168,12 @@ app.post("/removefromcart", fetchUser, async(req,res)=>{
     res.send("Removed")
 })
 
+app.post("/getcart", fetchUser, async (req,res)=>{
+    console.log("Get Cart");
+    let userData = await Users.findOne({_id:req.user.id});
+    res.json(userData.cartData);
+})
+
 const Users = mongoose.model("Users" ,{
     username:{
         type:String,
