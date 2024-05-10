@@ -7,8 +7,8 @@
     justify-content: center;
     text-align: center;
     margin-bottom: -235px;
-    background-image: url("../Assets/Faeded.jpg"); 
-    background-size: cover; 
+    /* background-image: url("../Assets/Faeded.jpg"); 
+    background-size: cover;  */
 }
 
 .hero-text {

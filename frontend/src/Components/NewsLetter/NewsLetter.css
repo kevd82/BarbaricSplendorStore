@@ -8,8 +8,8 @@
     margin: auto;
     margin-top: -120px;
     gap: 30px;
-    background-image: url("../Assets/Faeded.jpg"); 
-    background-size: cover; 
+    /* background-image: url("../Assets/Faeded.jpg"); 
+    background-size: cover;   */
     padding-bottom: 25px;
 }
 
