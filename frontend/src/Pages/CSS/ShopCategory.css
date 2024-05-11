@@ -1,6 +1,6 @@
 .shopcategory-indexSort {
     display: flex;
-    margin: 0px 170px;
+    margin: 50px 170px 25px 170px;
     justify-content: space-between;
     align-items: center;
 }
@@ -18,8 +18,13 @@
 .shopcategory-products {
     margin: 20px 170px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     row-gap: 80px;
+}
+
+.shopcategory-products img {
+    max-width: 80%;
+    max-height: auto;
 }
 
 .shopcategory-loadmore {
