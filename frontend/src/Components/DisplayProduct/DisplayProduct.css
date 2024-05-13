@@ -20,8 +20,8 @@
 }
 
 .displayproduct-main-img {
-    width: 586px;
-    height: 700px;
+    max-width: 90%;
+    max-height: auto;
 }
 
 .displayproduct-right {
