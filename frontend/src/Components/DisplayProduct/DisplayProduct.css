@@ -51,15 +51,24 @@
     font-size: 24px;
     font-weight: 700;
 }
-
-.displayproduct-right-description {
+.displayproduct-right-stock{
     display: flex;
     margin: 40px 0px;
     gap: 30px;
     font-size: 24px;
+    font-weight: 500;
 }
 
-.displayproduct-right button {
+.displayproduct-right-description {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 30px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.active-button {
     padding: 20px 40px;
     width: 200px;
     font-size: 16px;
@@ -70,8 +79,27 @@
     background-image: url("../Assets/Faeded.jpg");
     background-position: cover;
     margin-bottom: 40px;
+    margin-top: 40px;
     border: 1px solid black;
     border-radius: 75px;
     outline: none;
     cursor: pointer;
+}
+.active-button:hover {
+    transform: scale(1.1);
+}
+.disabled-button {
+    padding: 20px 40px;
+    width: 200px;
+    font-size: 16;
+    font-weight: 600;
+    color: #ff4141;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    background: lightgray;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border: 1px solid black;
+    border-radius: 75px;
+    outline: none;
 }

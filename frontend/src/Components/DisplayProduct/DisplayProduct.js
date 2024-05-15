@@ -31,12 +31,20 @@ const DisplayProduct = (props) => {
           <img src={star_dull_icon} alt=""/>
           <p>(122)</p> */}
         <div className="displayproduct-right-price">
-            ${product.price}
+          <p>${product.price}</p> 
+        </div>
+        <div className="displayproduct-right-stock">
+        <p>Available:</p><p>{product.stock}</p>
         </div>
         <div className="displayproduct-right-description">
           {product.description}
         </div>
-          <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
+          {product.stock===0?
+          <button className="disabled-button" disabled>OUT OF STOCK</button>
+          :<button className="active-button" onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
+          }
+        
+          
         </div>
       </div>
     </div>
