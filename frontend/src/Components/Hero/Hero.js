@@ -26,7 +26,7 @@ setRandomProduct(allProducts[randomProductIndex]);
             <h2>Miniatures and more for your barbarian gaming.</h2>
           </div>
         <div className="hero-featured">
-          
+        
         </div>
     </div>
   )
