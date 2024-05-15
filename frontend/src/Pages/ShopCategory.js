@@ -7,7 +7,8 @@ import Item from "../Components/Item/Item";
 const ShopCategory = (props) => {
     const {all_product} = useContext(ShopContext);
     const [itemsPerPage] = useState(10);
-    let totalItems = 0;
+  
+    let totalItems = 29;
   
   
   
@@ -30,7 +31,7 @@ const ShopCategory = (props) => {
           all_product.map((item, index)=>{
 
             if (props.category===item.category) {
-            
+        
               
               return <Item key={index} id={item.id} title={item.title} image={item.image} price={item.price} description={item.description} /> 
               
