@@ -6,15 +6,6 @@ import Item from "../Components/Item/Item";
 
 const ShopCategory = (props) => {
     const {all_product} = useContext(ShopContext);
-    const [itemsPerPage] = useState(10);
-  
-    let totalItems = 29;
-  
-  
-  
-
-    const totalPages = Math.ceil(totalItems/itemsPerPage );
-
 
   return (
     <div className="shop-category">
@@ -43,7 +34,7 @@ const ShopCategory = (props) => {
             
           })}
         
-          <h1> {totalPages} </h1>
+          
       </div>
       {/* <div className="shopcategory-loadmore">
         Show More
