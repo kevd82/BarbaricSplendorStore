@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext} from 'react';
 import "./CSS/ShopCategory.css";
 import { ShopContext } from '../Context/ShopContext';
 import Item from "../Components/Item/Item";
@@ -35,9 +35,7 @@ const ShopCategory = (props) => {
         
           
       </div>
-      {/* <div className="shopcategory-loadmore">
-        Show More
-      </div> */}
+      
       </div>
 
   )
