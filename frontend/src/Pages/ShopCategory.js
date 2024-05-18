@@ -4,12 +4,12 @@ import { ShopContext } from '../Context/ShopContext';
 import Item from "../Components/Item/Item";
 
 const ShopCategory = (props) => {
-    const {all_product, getTotalProducts} = useContext(ShopContext);
+    const {all_product} = useContext(ShopContext);
+    
 
-    
-    
-    
   
+    
+
 
   return (
     <div className="shop-category">
@@ -39,7 +39,7 @@ const ShopCategory = (props) => {
           })}
 
 
-        <h1>{getTotalProducts()}</h1> 
+        <h1>{}</h1> 
           
       </div>
       
@@ -49,4 +49,4 @@ const ShopCategory = (props) => {
   )
 }
 
-export default ShopCategory
+export default ShopCategory;

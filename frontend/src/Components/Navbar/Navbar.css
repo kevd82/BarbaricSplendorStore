@@ -1,4 +1,8 @@
 .navbar {
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 15px 15px 5px 15px;
@@ -6,7 +10,6 @@
     background-image: url("../Assets/Faeded.jpg"); 
     background-size: cover; 
     border-bottom: 3px solid Black;
-    margin-bottom: -35px;
 }
 
 .nav-logo {
@@ -103,9 +106,5 @@
     color: white;
 }
 
-@media(max-width: 1280px){
-    .navbar{
-        padding: 12px 50px;
-    }
-}
+
 

@@ -1,3 +1,7 @@
+.shop-category{
+    margin-top:225px;
+}
+
 .shopcategory-indexSort {
     display: flex;
     margin: 50px 170px 25px 170px;
@@ -16,7 +20,7 @@
 }
 
 .shopcategory-products {
-    margin: 100px 170px 170px 170px;
+    margin: 100px 170px 100px 170px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     row-gap: 80px;
