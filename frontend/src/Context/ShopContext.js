@@ -92,9 +92,21 @@ const ShopContextProvider = (props)=>{
             }
         }
         return totalItems;
-    }
+    };
 
-    const contextValue = {getTotalCartItems, all_product, cartItems, addToCart, removeFromCart, getTotalCartAmount};
+    const getTotalProducts = ()=>{
+        let totalProducts = 0;
+    
+        for(const item in all_product)
+        {
+            if(item.category===props.category){totalProducts += 1;}
+            }
+        return totalProducts;
+    };
+
+    
+
+    const contextValue = {getTotalProducts, getTotalCartItems, all_product, cartItems, addToCart, removeFromCart, getTotalCartAmount};
 
     
 
