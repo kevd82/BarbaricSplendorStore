@@ -20,7 +20,7 @@
 }
 
 .shopcategory-products {
-    margin: 100px 170px 100px 170px;
+    margin: 100px 170px 100px 270px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     row-gap: 80px;
