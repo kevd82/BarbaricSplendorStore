@@ -9,6 +9,7 @@ const ListProduct = () => {
   const [productsPerPage, setProductsPerPage] = (10);
 
   
+  
   const fetchInfo = async ()=>{
     await fetch("http://localhost:4000/allproducts")
     .then((res)=>res.json())
@@ -17,7 +18,7 @@ const ListProduct = () => {
 
   useEffect(()=>{
     fetchInfo();
-  },[])
+  },[]);
 
   const remove_product = async (id)=>{
     await fetch("http://localhost:4000/removeproduct", {
@@ -30,6 +31,10 @@ const ListProduct = () => {
     })
     await fetchInfo();
   }
+
+  const indexOfLastProduct = currentPage * productsPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+  const currentProducts = allproducts.slice(indexOfFirstProduct, indexOfLastProduct);
 
   return (
     <div className="list-product">
