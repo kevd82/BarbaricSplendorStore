@@ -6,7 +6,7 @@ const ListProduct = () => {
 
   const [allproducts, setAllProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [productsPerPage, setProductsPerPage] = (10);
+  const [productsPerPage, setProductsPerPage] = useState(10);
 
   
   
@@ -49,7 +49,7 @@ const ListProduct = () => {
       </div>
       <div className="listproduct-allproducts">
         <hr />
-        {allproducts.map((product,index)=>{
+        {currentProducts.map((product,index)=>{
           return <><div key={index} className="listproduct-format-main listproduct-format">
             <img className="listproduct-product-icon" src={product.image} alt="" />
             <p>{product.title}</p>
