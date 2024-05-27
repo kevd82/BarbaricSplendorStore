@@ -6,7 +6,7 @@ const ListProduct = () => {
 
   const [allproducts, setAllProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [productsPerPage, setProductsPerPage] = useState(10);
+  const [productsPerPage, setProductsPerPage] = useState(5);
 
   
   
