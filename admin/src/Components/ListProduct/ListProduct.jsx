@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import "./ListProduct.css";
 import cross_icon from "../../assets/cross_icon.png";
-import Pagination from "./Pagination";
 
 const ListProduct = () => {
 
   const [allproducts, setAllProducts] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [productsPerPage] = useState(5);
-
+  
   
   
   const fetchInfo = async ()=>{
@@ -33,11 +30,7 @@ const ListProduct = () => {
     await fetchInfo();
   }
 
-  const indexOfLastProduct = currentPage * productsPerPage;
-  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-  const currentProducts = allproducts.slice(indexOfFirstProduct, indexOfLastProduct);
 
-  const paginate = (pageNumber)=> setCurrentPage(pageNumber);
 
   return (
     <div className="list-product">
@@ -52,7 +45,7 @@ const ListProduct = () => {
       </div>
       <div className="listproduct-allproducts">
         <hr />
-        {currentProducts.map((product,index)=>{
+        {allproducts.map((product,index)=>{
           return <><div key={index} className="listproduct-format-main listproduct-format">
             <img className="listproduct-product-icon" src={product.image} alt="" />
             <p>{product.title}</p>
@@ -64,10 +57,7 @@ const ListProduct = () => {
           </>
         })}
       </div>
-      <Pagination 
-      productsPerPage={productsPerPage} 
-      totalProducts={allproducts.length} 
-      paginate={paginate} />
+      
     </div>
   )
 }
